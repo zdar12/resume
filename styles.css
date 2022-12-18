@@ -260,6 +260,12 @@ margin-right: 0;
     border: 1px solid green;
 }
 
+.bg_blue {
+    background: rgb(223, 207, 207);
+    border: 1px solid brown;
+}
+
+
 .btn {
     border-radius: 5px;
     background: #111;
