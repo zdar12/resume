@@ -6,37 +6,50 @@
     <title>rezume</title>
     <meta name="description" content="Тестовая страница резюме">
     <meta name="keywords" content="Marat, rezume, cv">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <img src="images/HTML5_logo.png" width="200" alt="Марат Саденов">
-    <h1>Сериков Берик </h1>
-    <p>Я занимаюсь программированием в <strong>Компании</strong></p>
-    <P>Я люблю <em>путешествовать, заниматься спортом и программировать</em></P>
-    <hr>
-    <h4>Список социальных сетей:</h4>
-    <a href="https://www.instagram.com/vladilen.minin" target="_blank">Instagram</a> |
-    <a href="https://facebook.com/" target="_blank">Facebook</a> |
-    <a href="https://t.me/js_by_vladilen" target="_blank">Telegram</a> |
-    <a href="https://www.youtube.com/c/VladilenMinin" target="_blank">Youtube</a> |
-    <a href="https://vk.com/vladilen.minin" target="_blank">VK</a> |
-    <a href="https://vladilen.notion.site/Roadmap-YouTube-0b917095c1ec424e9574c2ede36efab9" target="_blank">Roadmap по каналу</a>
-    
+    <div class="container">
+            <div class="info ">
+                <img src="images/HTML5_logo.png" class="avatar" alt="Сериков Берик">
+            
+            <div class="info-text">
+                <h1>Вениамин Хакназаров</h1>
+                <p>Я занимаюсь программированием в <strong>Компании</strong></p>
+                <P>Я люблю <em>путешествовать, заниматься спортом и программировать</em></P>
+                
+                <div class="listSM">
+                    <hr>
+                    <h4>Социальные сети:</h4>
+                    <a href="https://www.instagram.com/vladilen.minin" target="_blank">Instagram</a> 
+                    <a href="https://facebook.com/" target="_blank">Facebook</a>
+                    <a href="https://t.me/js_by_vladilen" target="_blank">Telegram</a> 
+                    <a href="https://www.youtube.com/c/VladilenMinin" target="_blank">Youtube</a> 
+                    <a href="https://vk.com/vladilen.minin" target="_blank">VK</a> 
+                    <a href="https://vladilen.notion.site/Roadmap-YouTube-0b917095c1ec424e9574c2ede36efab9" target="_blank">Roadmap по каналу</a>
+                </div>
+            </div>
+            
+        </div>
+    <div class="card bg_yellow">
     <h2>Мои хобби</h2>
-    <ol>
+    <ol class="list">
         <li>Путешествия</li>
         <li>Блоггинг</li>
         <li>Горные лыжи</li>
         <li>ММА</li>
     </ol>
-
+    </div>
+    
+    <div class="card bg_red">
     <h2>Опыт работы</h2>
-    <table>
+    <table class="table">
         <thead>
             <tr>
                 <th>Название</th>
                 <th>Должность</th>
-                <th>Год</th>
+                <th>Период</th>
             </tr>
         </thead>
         <tbody>
@@ -53,36 +66,89 @@
             <tr>
                 <td>Software Outsourcing Services</td>
                 <td>Senior Frontend</td>
-                <td>2017-2019</td>
+                <td>2017 - 2019</td>
             </tr>
             <tr>
                 <td>EPAM</td>
                 <td>Software Engineer</td>
-                <td>2016-2017</td>
+                <td>2016 - 2017</td>
             </tr>
             <tr>
                 <td>LPTracker</td>
                 <td>Frontend</td>
-                <td>2015-2016</td>
+                <td>2015 - 2016</td>
             </tr>
         </tbody>
     </table>
-<h2>Связаться со мной</h2>
-<form action="/">
-    <div>
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="name" placeholder="Введите имя">
     </div>
-    <div>
-        <label for="email">Ваш email:</label>
-        <input type="text" id="email" placeholder="Введите email">
-    </div>
-    <div>
-        <label for="message">Ваше сообщение:</label><br>
-        <textarea id="message" cols="30" rows="5" placeholder="Введите сообщение..."></textarea>
-    </div>
-    <input type="submit" value="Отправить">
-</form>
+    <div class="card bg_red">
+        <h2>Опыт работы</h2>
+        <table class="table2">
 
+            <tbody>
+                <tr>
+                    <td>Result School</td>
+                    <td>CEO</td>
+                    <td>2021 - сейчас</td>
+                </tr>
+                <tr>
+                    <td>Youtube</td>
+                    <td>Blogger</td>
+                    <td>2019 - сейчас</td>
+                </tr>
+                <tr>
+                    <td>Software Outsourcing Services</td>
+                    <td>Senior Frontend</td>
+                    <td>2017 - 2019</td>
+                </tr>
+                <tr>
+                    <td>EPAM</td>
+                    <td>Software Engineer</td>
+                    <td>2016 - 2017</td>
+                </tr>
+                <tr>
+                    <td>LPTracker</td>
+                    <td>Frontend</td>
+                    <td>2015 - 2016</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    <div class="card bg_yellow">
+        <h2>Мои курсы</h2>
+        <ul class="link-list">
+            <li><a href="#">Получение профессии Frontend разработчика</a></li>
+            <li><a href="#">Крусы HTML/CSS</a></li>
+            <li><a href="#">Все курсы</a></li>
+        </ul>
+    </div>
+
+    <div class="card bg_green">
+        <form action="/" class="form">
+            <h2>Связаться со мной</h2>
+            <div class="form-row">
+                <div class="form-group">
+                    <div>
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" placeholder="Введите имя">
+                    </div>
+                    <div >
+                        <label for="email">Ваш email:</label>
+                        <input type="text" id="email" placeholder="Введите email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Ваше сообщение:</label><br>
+                    <textarea id="message" cols="30" rows="5" placeholder="Введите сообщение..."></textarea>
+                </div>
+            </div>
+            <div>
+                
+                <input type="submit" value="Отправить" class="btn">
+            </div>
+            
+        </form>
+    </div>
+</div>
 </body>
 </html>
